@@ -70,8 +70,28 @@ nav>a {
   align-items: center;
 }
 
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 40px 32px 40px;
+}
+
+.form-result-container {
+  border: 3px solid black;
+  width: 300px;
+  padding-left: 10px;
+}
+
+section {
+  margin: 15px 30px;
+}
+
 footer {
   text-align: right;
   font-size: small;
   opacity: 50%;
+}
+
+body {
+  background-color: beige;
 }

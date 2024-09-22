@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>First Web</title>
   <link rel="stylesheet" href="css\styles.css">
-  <link rel="icon" href="assets\web-icon.ico" type="image/x-icon">
+  <link rel="icon" href="assets\icon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -44,7 +44,7 @@
 
     <!--Our Profile-->
     <section id="section-our-profile">
-      <header></header>
+      <header>
         <h1>Our Profile</h1>
       </header>
 
@@ -83,18 +83,46 @@
         <h1>Message Us</h1>
       </header>
 
-      <section>
+      <section class="form-container">
         <!--Form-->
-        <form></form>
+        <form>
+          <label for="nama">Nama:</label>
+          <input type="text" placeholder="Name">
+          <br />
+
+          <label for="tanggal">Tanggal:</label>
+          <input type="date">
+          <br />
+
+          <label for="jenisKelamin">Jenis Kelamin:</label>
+          <input type="radio" name="jenisKelamin" id="jenisKelamin">
+          <label for="jenisKelamin">Laki-laki</label>
+          <input type="radio" name="jenisKelamin" id="jenisKelamin">
+          <label for="jenisKelamin">Perempuan</label>
+          <br />
+
+          <label for="pesan">Pesan:</label>
+          <textarea placeholder="Pesan"></textarea><br>
+
+          <button type="submit">Send</button>
+        </form>
 
         <!--Result Form-->
-        <div></div>
+        <div class="form-result-container">
+          <p>Nama: Dwi Cahyo B.</p>
+          <p>Tanggal: Sunday, 9/22/2024 12:31</p>
+          <p>Jenis Kelamin: Laki-laki</p>
+          <p>Pesan: Hai, Saya Dwi Cahyo</p>
+        </div>
       </section>
     </section>
+
+    <hr />
+
   </main>
 
   <footer>
-    <p>Made by Cayoo@2024</p>
+    <p>Made by <a href="https://www.instagram.com/dwcyo_/" target="_blank">Cayoo@2024</a></p>
   </footer>
 </body>
 
