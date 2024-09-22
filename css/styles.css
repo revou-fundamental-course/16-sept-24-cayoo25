@@ -1,0 +1,77 @@
+.logo-icon {
+  height: 50px;
+  width: 50px;
+  background-image: url(../assets/web-logo.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
+nav>a {
+  border: 1px solid;
+  padding: 8px;
+  color: black;
+  text-decoration: none;
+}
+
+.photo-banner {
+  border: 1px solid;
+  height: 480px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/photo-banner.png);
+  max-width: 100%;
+}
+
+
+.profile-icon-1 {
+  height: 50px;
+  width: 50px;
+  background-image: url(../assets/profile-icon-1.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.profile-icon-2 {
+  height: 50px;
+  width: 50px;
+  background-image: url(../assets/profile-icon-2.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.profile-icon-3 {
+  height: 50px;
+  width: 50px;
+  background-image: url(../assets/profile-icon-3.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.profile-icon-container {
+  justify-content: space-around;
+  display: flex;
+}
+
+.profile-icon-container {
+  align-items: center;
+}
+
+footer {
+  text-align: right;
+  font-size: small;
+  opacity: 50%;
+}
