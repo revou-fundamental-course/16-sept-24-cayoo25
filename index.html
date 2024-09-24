@@ -31,7 +31,7 @@
     <!--Home-->
     <section id="section-home">
       <header>
-        <h1>Hi User, Welcome to My Website</h1>
+        <h1>Hi <span id="name">user</span> welcome to my website</h1>
       </header>
 
       <article>
@@ -41,8 +41,6 @@
         <div class="photo-banner"></div>
       </article>
     </section>
-
-    
 
     <!--Our Profile-->
     <section id="section-our-profile">
@@ -68,59 +66,57 @@
       </div>
     </section>
 
-    
-
     <!--Portofolio-->
     <section id="section-portofolio">
       <header>
         <h1>Portofolio</h1>
         <img src="assets/photo-banner.jpg" width="200px"/>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nihil assumenda mollitia aperiam. Voluptates et quaerat harum at, deleniti asperiores repellat enim ab distinctio recusandae eos molestias unde esse vitae.</h4>
       </header>
     </section>
     
-    
-
     <!--Message Us-->
     <section id="section-message-us">
       <header></header>
         <h1>Message Us</h1>
-      </header>
+    </header>
 
       <section class="form-container">
         <!--Form-->
-        <form name="messages-form" onsubmit="return validateForm()">
-          Nama: <input placeholder="name" type="text" name="full-name" />
-          <br />
-
-          Tanggal Lahir:
-          <input type="data" name="birth-date" />
-          <br />
-
-          Jenis Kelamin:
-          <input type="radio" id="male" name="gender" value="male" />
-          <label for="male">Laki-laki</label>
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="female">Perempuan</label>
-          <br />
-
-          Pesan:
-          <textarea placeholder="Pesan" name="message"></textarea>
-          <br />
-
-          <input type="submit" value="Submit" />
+        <form id="myForm">
+          <div class="form-group">
+            <input type="text" id="input-name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="date" id="date-input" name="date" placeholder="Birth Date" required>
+          </div>
+          <div class="form-group">
+            <label for="gender">Jenis Kelamin :</label>
+            <select name="gender" id="input-gender">
+              <option value="Laki-Laki">Laki-Laki</option>
+              <option value="Perempuan">Perempuan</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea type="text" id="input-message" name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button id="submit">Send Message</button>
         </form>
 
         <!--Result Form-->
-        <div class="form-result-container">
-          <p>Nama: <span id="sender-full-name"></span></p>
-          <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
-          <p>Jenis Kelamin: <span id="sender-gender"></span></p>
-          <p>Pesan: <span id="sender-messages"></span></p>
+        <div class="result-container">
+          <div id="result" class="result">
+            Name : <span id="info-name"></span>
+            <br />
+            Birth Date : <span id="info-date"></span>
+            <br />
+            Gender : <span id="info-gender"></span>
+            <br />
+            Message : <span id="info-message"></span>
+          </div>
         </div>
       </section>
     </section>
-
-    
 
   </main>
 

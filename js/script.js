@@ -1,24 +1,20 @@
-// ini javascript
+const form = document.getElementById('myForm');
+const nameSpan = document.getElementById('name');
 
-function validateForm() {
-  const name = document.forms["message-form"]["full-name"].value;
-  const birthDate = document.forms["message-form"]["birth-date"].value;
-  const gender = document.forms["message-form"]["gender"].value;
-  const messages = document.forms["message-form"]["messages"].value;
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
 
-  if (name == "" || birthDate == "" || gender == "" || messages == "") {
-    alert("Tidak boleh ada yang kosong");
-    return false;
-  }
+    const name = document.getElementById('input-name').value;
+    const birthDate = document.getElementById('date-input').value;
+    const gender = document.getElementById('input-gender').value;
+    const message = document.getElementById('input-message').value;
 
-  setSenderUI(name, birthDate, gender, messages);
+    nameSpan.textContent = name;
 
-  return false;
-}
+    document.getElementById('info-name').textContent = name;
+    document.getElementById('info-date').textContent = birthDate;
+    document.getElementById('info-gender').textContent = gender;
+    document.getElementById('info-message').textContent = message;
 
-function setSenderUI(name, birthDate, gender, messages) {
-  document.getElementById("sender-full-name").innerHTML = name;
-  document.getElementById("sender-birth-date").innerHTML = birthDate;
-  document.getElementById("sender-gender").innerHTML = gender;
-  document.getElementById("sender-messages").innerHTML = messages;
-}
+    form.reset();
+});

@@ -1,6 +1,7 @@
 * {
-  padding: 0%;
-  margin: 0%;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 html {
@@ -99,11 +100,87 @@ nav>a:hover {
   margin: 16px 40px 32px 40px;
 }
 
-.form-result-container {
-  border: 3px solid black;
+.result-container {
+  border: 1px solid black;
   width: 300px;
   padding-left: 10px;
-  padding-top: 14px;
+  padding-top: 60px;
+  box-shadow: 5% solid #bbb;
+}
+
+.result-container {
+  background-color: #f8f9fa;
+  padding: 50px;
+  width: 270px;
+  border-radius: 8px;
+  margin: 50px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container>h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat( 2, 1fr);
+  grid-gap: 30px;
+}
+
+.contact-form {
+  text-align: left;
+}
+
+.contact-form>h3 {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.form-group>select {
+  width: 180px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f8f9fa;
+}
+
+input, textarea, select {
+  width: 270px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+input:focus,
+textarea:focus
+select:focus {
+  outline: none;
+  box-shadow: 0 0 5px #bbb;
+}
+
+button {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
 }
 
 section {
